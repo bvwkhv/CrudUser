@@ -29,6 +29,14 @@
                                 </div>
 
                                 <div class="form-group mb-3">
+                                    <input type="text" placeholder="like" id="like" class="form-control" name="like"
+                                           required autofocus>
+                                    @if ($errors->has('like'))
+                                        <span class="text-danger">{{ $errors->first('like') }}</span>
+                                    @endif
+                                </div>
+
+                                <div class="form-group mb-3">
                                     <input type="text" placeholder="Address" id="name" class="form-control" name="address"
                                            required autofocus>
                                     @if ($errors->has('address'))
